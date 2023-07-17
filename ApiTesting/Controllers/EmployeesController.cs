@@ -26,12 +26,12 @@ namespace ApiTesting.Controllers
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
-        public  Employee GetEmployee(int id)
+        public ActionResult<Employee> GetEmployee(int id)
         {
 
             var employee = employeeRepo.GetEmployees(id);
 
-            return employee;
+            return Ok(employee);
         }
 
         // PUT: api/Employees/5

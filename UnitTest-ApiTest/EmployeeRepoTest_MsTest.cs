@@ -6,7 +6,7 @@ using Moq;
 namespace UnitTest_ApiTest
 {
     [TestClass]
-    public class UnitTest1
+    public class EmployeeRepoTest_MsTest
     {
         [TestMethod]
         public void CreateEmployee_EmployeeObject_BoolOutput()
@@ -74,7 +74,7 @@ namespace UnitTest_ApiTest
                 Title = "SDE",
             };
             var r1 = true;
-            if(employee1 != result)
+            if(employee1 != result) 
             {
                 r1=false;
             }
